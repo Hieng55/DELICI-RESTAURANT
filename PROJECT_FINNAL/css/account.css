@@ -1,0 +1,447 @@
+.info-account {
+    background-color: var(--bg);
+    padding: 50px 0;
+}
+.info-account .group-info {
+    background-color: var(--bg2);
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    display: none;
+}
+.info-account .group-info.active {
+    display: block;
+}
+.info-account .list-info {
+    background-color: var(--bg);
+    padding: 40px;
+    border-radius: 5px;
+}
+.info-account .list-info li {
+    color: var(--white);
+    line-height: 40px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.142);
+    margin-bottom: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-family: "DM Sans", sans-serif;
+    transition: 0.2s;
+    font-weight: 400;
+}
+.info-account .list-info li:hover {
+    background-color: var(--mainColor);
+    color: black;
+    font-weight: 400;
+}
+.info-account .list-info li.after {
+    background-color: var(--mainColor);
+    color: black;
+    font-weight: 400;
+}
+.info-account .list-content {
+    display: none;
+}
+.info-account .list-content.active {
+    display: block;
+}
+.info-account .list-info li span {
+    margin-right: 15px;
+}
+.info-account .list-information {
+    background-color: var(--bg);
+    padding: 40px;
+    border-radius: 5px;
+}
+.info-account .list-information li {
+    color: var(--white);
+    font-family: "Forum", cursive;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.142);
+    height: 50px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    padding-left: 20px;
+}
+.info-account .list-input {
+    background-color: var(--bg);
+    padding: 40px;
+    border-radius: 5px;
+}
+.info-account .list-input li input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: var(--bg2);
+    border: none;
+    padding-left: 20px;
+    border: 1px solid #e4c2905a;
+    outline: none;
+    font-weight: 500;
+    font-family: "Forum", cursive;
+    color: var(--mainColor);
+}
+.info-account .list-input li input:focus {
+    border: 1px solid var(--mainColor);
+}
+#change .save {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-account .booking-table {
+    background-color: var(--bg);
+    padding: 40px;
+    border-radius: 5px;
+}
+.info-account .booking-table li {
+    color: var(--white);
+    line-height: 40px;
+}
+.info-account .booking-table li span {
+    color: var(--mainColor);
+}
+.info-account .booking-table .booking-content {
+    border: 1px solid var(--mainColor);
+    padding: 10px;
+}
+.info-account .booking-table h3 {
+    color: var(--mainColor) !important;
+    font-family: "Forum", cursive;
+    margin-bottom: 10px;
+}
+.info-account .remove .btn2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.info-account .input-container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.info-account .input-container > span,
+.input-container .input {
+    white-space: nowrap;
+    display: block;
+}
+
+.info-account .input-container > span,
+.input-container .input:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.info-account .input-container > span,
+.input-container .input {
+    border-radius: 0 6px 6px 0;
+}
+
+.info-account .input-container > span,
+.input-container .input {
+    margin-left: -1px;
+}
+
+.info-account .input-container .input {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info-account .input-container span {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: gray;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.info-account .input-container:focus-within > span {
+    background-color: var(--mainColor);
+}
+.info-account .input {
+    outline: none;
+    background-color: var(--bg2);
+    border: none;
+    padding-left: 20px;
+    color: var(--mainColor);
+}
+.info-account .input:focus {
+    border: 1px solid var(--mainColor);
+}
+.popup-product {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: 15px !important;
+}
+.popup-product h6 {
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.popup-product .price {
+    color: rgb(255, 94, 94);
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+}
+.popup-product b {
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+}
+.popup-product i {
+    font-size: 13px;
+}
+.popup-product .image {
+    width: 10%;
+}
+.popup-product .image img {
+    object-fit: cover;
+}
+.popup-product .popup-item {
+    color: var(--white);
+    line-height: 8px;
+}
+.popup-product .popup-item .price {
+    margin-bottom: unset !important;
+    font-size: 12px;
+}
+.booking-order h3 {
+    color: var(--mainColor);
+    font-family: "Forum", cursive;
+    font-size: 30px;
+}
+.group-order {
+    margin-top: 20px;
+}
+.group-order h4 {
+    font-size: 18px;
+    color: var(--mainColor);
+    font-family: "Forum", cursive;
+}
+.group-order .popup-product h5 {
+    color: white;
+    font-size: 15px;
+}
+.detail-total ul li {
+    color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--mainColor);
+    padding: 10px 0 5px 0;
+    font-family: "DM Sans", sans-serif;
+    line-height: 40px;
+}
+.detail-total ul li .cod {
+    color: rgb(0, 208, 3);
+}
+.detail-total ul li .free {
+    color: rgb(0, 208, 3);
+}
+.detail-total ul li strong {
+    font-size: 15px;
+}
+@media (max-width: 1294px) {
+    .info-account .list-info li {
+        font-size: 13px;
+    }
+    .info-account .group-info {
+        width: 95%;
+    }
+}
+@media (max-width: 1098px) {
+    .headline-1 h2 {
+        font-size: 50px !important;
+    }
+    .headline-1 h4 {
+        font-size: 12px !important;
+    }
+    .headline-1 p {
+        width: 100px !important ;
+    }
+    .cart-total ul li {
+        width: 60% !important;
+    }
+    .cart-total .btn2 {
+        width: 30%;
+    }
+    .info-account .remove .btn2 {
+        font-size: 13px;
+    }
+}
+@media (max-width: 991px) {
+    .info-account .input-container {
+        width: 70%;
+    }
+    .info-account .remove .btn2 {
+        width: 100%;
+        font-size: 13px;
+    }
+}
+@media (max-width: 733px) {
+    .banner-menu .image {
+        margin-top: 50px;
+    }
+    .banner-menu .headline-1 {
+        top: -10%;
+    }
+    .headline-1 h2 {
+        font-size: 40px !important;
+    }
+    .headline-1 h4 {
+        font-size: 10px !important;
+        letter-spacing: 5px !important;
+    }
+    .info-account .input-container {
+        width: 95%;
+    }
+    .info-account .remove .btn2 {
+        width: 100%;
+        font-size: 13px;
+    }
+    .popup-product .image {
+        width: 15%;
+    }
+}
+@media (max-width: 565px) {
+    .banner-menu .headline-1 {
+        top: -10%;
+    }
+    .banner-menu .headline-1 p {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: unset;
+        width: 90px;
+    }
+    .headline-1 h4 {
+        margin-top: -10px;
+    }
+    .headline-1 h2 {
+        font-size: 30px !important;
+    }
+    .headline-1 h4 {
+        font-size: 10px !important;
+        letter-spacing: 5px !important;
+    }
+    .info-account .booking-table .booking-content {
+        font-size: 13px;
+    }
+    .info-account .booking-table {
+        padding: 20px;
+    }
+    .info-account .group-info {
+        padding: 10px;
+    }
+    .info-account .remove .btn2 {
+        width: 100%;
+        font-size: 13px;
+    }
+    .popup-product .image {
+        width: 18%;
+    }
+    .popup-product .popup-item h6 b {
+        font-size: 10px;
+    }
+    .popup-product .popup-item h6 i {
+        font-size: 10px;
+    }
+    .popup-product .popup-item .select b {
+        font-size: 10px;
+    }
+    .popup-product .popup-item .select i {
+        font-size: 10px;
+    }
+    .popup-product .popup-item .money b {
+        font-size: 10px;
+    }
+    .popup-product .popup-item .money i {
+        font-size: 10px;
+    }
+    .group-order .popup-product h5 {
+        font-size: 13px;
+    }
+}
+@media (max-width: 430px) {
+    .headline-1 h2 {
+        font-size: 25px !important;
+    }
+    .headline-1 h4 {
+        font-size: 8px !important;
+        letter-spacing: 4px !important;
+    }
+    .headline-1 p {
+        width: 80px !important ;
+    }
+    .info-account .input-container span {
+        font-size: 13px;
+        width: 25%;
+    }
+    .info-account .list-info {
+        padding: 30px;
+    }
+    .info-account .group-info {
+        padding: 10px;
+        width: 100%;
+    }
+    .popup-product .image {
+        display: none;
+    }
+    .popup-product {
+        justify-content: space-between;
+    }
+    .detail-total {
+        font-size: 13px;
+    }
+    .detail-total ul li strong {
+        font-size: 13px;
+    }
+}
+@media (max-width: 361px) {
+    .headline-1 h2 {
+        font-size: 20px !important;
+        margin-top: -10px;
+    }
+    .headline-1 h4 {
+        font-size: 7px !important;
+        letter-spacing: 4px !important;
+        margin-bottom: -15px;
+    }
+    .headline-1 p {
+        width: 60px !important ;
+    }
+    .info-account .input-container .input {
+        height: 50px;
+        font-size: 13px;
+    }
+    .info-account .input-container span {
+        height: 50px;
+    }
+    .popup-product .image {
+        width: 30%;
+    }
+}

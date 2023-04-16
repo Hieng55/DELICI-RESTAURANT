@@ -1,0 +1,336 @@
+.form-product {
+    background-color: var(--bg2);
+    padding: 50px;
+}
+.form-product h4 {
+    text-align: center;
+    color: var(--white);
+    font-family: "Forum", cursive;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.form-product .group-products {
+    border: 1px solid var(--white);
+    color: white;
+    width: 50%;
+    /* padding: 20px; */
+    margin: auto;
+}
+.form-product .group-products .box-form .item-product {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    /* margin-right: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 30px;
+    margin-top: 20px;
+}
+.form-product .group-products .box-form .image {
+    width: 25%;
+    margin: 20px auto;
+}
+.form-product .group-products .box-form .item-product .text-form {
+    border: 1px solid var(--mainColor);
+    width: 40%;
+    height: 45px;
+    /* margin-top: 20px; */
+    display: flex;
+    color: var(--white);
+    gap: 10px;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    align-items: center;
+    border-radius: 15px;
+}
+.form-product .group-products .box-form .item-product .text-form b {
+    font-weight: 500;
+}
+.form-product .group-products .box-form .item-product .text-form span {
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.form-product .group-products .box-form p {
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+table {
+    width: 100%;
+    /* border: 1px solid white; */
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+table tr th {
+    width: 25%;
+    height: 70px;
+    border-bottom: 2px solid black;
+}
+table tr td {
+    /* border: 2px solid white; */
+    width: 25%;
+    height: 70px;
+    border-bottom: 2px solid black;
+}
+table tr th {
+    font-weight: 400;
+}
+/* table .tr .td {
+    border: 2px solid white;
+    width: 75%;
+    height: 50px;
+} */
+table thead tr th {
+    background-color: var(--mainColor);
+    color: black;
+    border: none;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+}
+table tbody tr {
+    background-color: var(--bg);
+    color: var(--mainColor);
+}
+table tbody .td {
+    color: rgb(4, 255, 0);
+}
+table tbody .tr {
+    color: white;
+    font-size: 18px;
+}
+table tbody .color {
+    background-color: rgb(37, 37, 37);
+}
+.info-ship {
+    background-color: var(--bg2);
+    padding: 30px;
+}
+.info-ship ul {
+    border: 1px solid var(--mainColor);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.info-ship h4 {
+    text-align: center;
+    color: white;
+    font-family: "Forum", cursive;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.info-ship ul li span {
+    color: white;
+    line-height: 50px;
+}
+.info-ship ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info-ship ul li b {
+    color: var(--mainColor);
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+}
+@media (max-width: 1211px) {
+    .headline-1 h4 {
+        font-size: 13px !important;
+    }
+    .headline-1 h2 {
+        font-size: 70px !important;
+    }
+    .headline-1 p {
+        width: 100px !important;
+    }
+    .form-product .group-products {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1060px) {
+    .headline-1 h4 {
+        font-size: 13px !important;
+    }
+    .headline-1 h2 {
+        font-size: 50px !important;
+    }
+    .headline-1 p {
+        width: 100px !important;
+    }
+    .form-product .group-products {
+        width: 70%;
+    }
+}
+@media (max-width: 991px) {
+    .form-product {
+        padding: 50px 20px;
+    }
+    .info-ship ul {
+        width: 60%;
+    }
+}
+@media (max-width: 791px) {
+    .headline-1 h4 {
+        font-size: 13px !important;
+    }
+    .headline-1 h2 {
+        font-size: 30px !important;
+    }
+    .headline-1 p {
+        width: 100px !important;
+    }
+    .form-product .group-products {
+        width: 90%;
+    }
+    .info-ship ul {
+        width: 70%;
+    }
+}
+@media (max-width: 649px) {
+    .headline-1 h4 {
+        font-size: 10px !important;
+    }
+    .headline-1 h2 {
+        font-size: 20px !important;
+    }
+    .headline-1 p {
+        width: 100px !important;
+    }
+    .banner-menu .image {
+        margin-top: 50px;
+    }
+    .banner-menu .headline-1 {
+        top: -10%;
+    }
+    .form-product .group-products {
+        width: 90%;
+    }
+    .form-product h4 {
+        font-size: 30px;
+    }
+    .form-product .group-products .box-form .item-product .text-form {
+        font-size: 15px;
+    }
+    .form-product .group-products .box-form .item-product .text-form span {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .form-product .group-products .box-form p {
+        font-size: 15px;
+    }
+    table thead tr th {
+        font-size: 13px !important;
+        font-weight: 500;
+    }
+    table tr th {
+        font-size: 13px !important;
+    }
+    table tr td {
+        font-size: 13px !important;
+    }
+    .info-ship h4 {
+        font-size: 30px;
+    }
+    .info-ship ul {
+        width: 80%;
+    }
+}
+@media (max-width: 512px) {
+    .headline-1 p {
+        display: block !important;
+        margin-top: 30px !important;
+    }
+    .form-product .group-products {
+        width: 95%;
+    }
+    .form-product h4 {
+        font-size: 25px;
+    }
+    .form-product .group-products .box-form .item-product .text-form {
+        font-size: 15px;
+        width: 45%;
+    }
+    .form-product .group-products .box-form .item-product .text-form span {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .form-product .group-products .box-form p {
+        font-size: 13px;
+    }
+    .info-ship ul {
+        width: 90%;
+    }
+    .info-ship ul li {
+        font-size: 13px;
+    }
+}
+@media (max-width: 425px) {
+    .headline-1 h4 {
+        font-size: 10px !important;
+    }
+    .headline-1 h2 {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+        margin-top: -10px;
+    }
+    .headline-1 p {
+        width: 80px !important;
+    }
+    .banner-menu .headline-1 {
+        top: -15%;
+    }
+    table thead tr th {
+        font-size: 12px !important;
+        font-weight: 500;
+    }
+    table tr th {
+        font-size: 10px !important;
+    }
+    table tr td {
+        font-size: 10px !important;
+    }
+    .form-product .group-products .box-form .item-product .text-form {
+        font-size: 15px;
+        width: 60%;
+    }
+    .form-product .group-products .box-form .image {
+        width: 30%;
+    }
+    .info-ship ul {
+        width: 90%;
+    }
+    .info-ship h4 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 365px) {
+    table thead tr th {
+        font-size: 10px !important;
+        font-weight: 500;
+    }
+    table tr th {
+        font-size: 9px !important;
+    }
+    table tr td {
+        font-size: 9px !important;
+    }
+    .form-product .group-products .box-form .item-product .text-form {
+        font-size: 13px;
+        width: 60%;
+    }
+    .form-product .group-products .box-form .item-product .text-form span {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .form-product .group-products .box-form p {
+        font-size: 10px;
+    }
+    .form-product .group-products .box-form .image {
+        width: 40%;
+    }
+    .info-ship ul li {
+        font-size: 10px;
+    }
+}

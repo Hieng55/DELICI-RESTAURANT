@@ -1,0 +1,420 @@
+.billing {
+    background-color: var(--bg);
+    padding: 100px 50px;
+}
+.billing .billing-info h3 {
+    color: var(--white);
+    font-family: "Forum", cursive;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.input-group {
+    /* position: relative; */
+    margin-bottom: 20px;
+}
+.input {
+    border: 1px solid #ffffff;
+    background: transparent;
+    height: 60px;
+    width: 100%;
+    color: var(--mainColor) !important;
+    padding-left: 20px;
+    /* margin-bottom: 20px; */
+    font-family: "DM Sans", sans-serif;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-label {
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    font-size: 13px;
+    color: #e8e8e89a;
+    pointer-events: none;
+    transform: translateY(60%);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 10px;
+}
+
+.input:focus,
+input:valid {
+    outline: none;
+    border: 1px solid var(--mainColor);
+}
+
+.input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-80%) scale(0.8);
+    background-color: var(--bg);
+    padding: 0 5px;
+    color: var(--mainColor);
+}
+.code:focus ~ .dis,
+input:valid ~ .dis {
+    transform: translateY(-75%) scale(0.8);
+    background-color: var(--bg);
+    padding: 0 5px;
+    color: var(--mainColor);
+}
+label {
+    display: unset;
+}
+.c-radio label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.c-radio label:hover {
+    border: 1px solid var(--mainColor);
+}
+.c-radio label i {
+    font-size: 30px;
+    color: rgb(0, 255, 0);
+}
+.c-radio label input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid blue;
+}
+.c-radio label .text-radio {
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+.c-radio {
+    margin-bottom: 20px;
+}
+.error {
+    text-align: unset !important;
+    display: block;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.btn2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50px;
+    font-size: 15px;
+    margin: 20px 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    margin: auto;
+}
+.product-name {
+    padding-left: 20px;
+    width: 100%;
+    /* border-left: 1px solid var(--mainColor); */
+}
+.product-name h3 {
+    color: var(--white);
+    font-family: "Forum", cursive;
+    font-size: 35px;
+    margin-top: 10px;
+}
+.popup {
+    width: 100%;
+
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.popup .popup-product {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.popup .popup-product h6 {
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.popup .popup-product .price {
+    color: rgb(255, 94, 94);
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+}
+.popup .popup-product b {
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+}
+
+.popup .popup-product .image {
+    width: 20%;
+}
+.popup .popup-product .image img {
+    object-fit: cover;
+}
+.popup .popup-product .popup-item {
+    color: var(--white);
+}
+.popup .popup-product .popup-item .price {
+    margin-bottom: unset !important;
+}
+.product-name .discount label {
+    padding-left: 10px;
+}
+.product-name .discount input {
+    width: 70%;
+    height: 60px;
+}
+.product-name .discount {
+    margin-top: 48px;
+}
+.product-name .discount .input-group button {
+    width: 30%;
+    height: 60px;
+    border: none;
+    background-color: var(--mainColor);
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.product-name .discount .input-group button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.product-name .billing-product {
+    margin-top: 65px;
+}
+.product-name .billing-product h5 {
+    color: var(--white);
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 30px;
+}
+.product-name .billing-product p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--white);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: white;
+    color: var(--mainColor);
+    font-family: "DM Sans", sans-serif;
+}
+.product-name .billing-product p b {
+    font-weight: 500;
+    color: var(--mainColor);
+}
+.product-name .billing-product .ship b {
+    color: rgb(0, 255, 0);
+}
+.footer .email .input {
+    padding-left: unset !important;
+    border: none;
+}
+.footer .email input:focus {
+    border: 1px solid var(--mainColor);
+}
+.footer .email .icon {
+    top: 15%;
+}
+.text-code {
+    color: red;
+    font-size: 13px;
+}
+@media (max-width: 1058px) {
+    .popup .popup-product h6 {
+        font-size: 15px;
+    }
+    .popup .popup-product .select {
+        font-size: 15px;
+    }
+    .popup .popup-product .money {
+        font-size: 15px;
+    }
+}
+@media (max-width: 991px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .product-name .discount .input-group button {
+        font-size: 17px;
+    }
+    .headline-1 h2 {
+        font-size: 50px !important;
+    }
+    .headline-1 h4 {
+        font-size: 12px !important;
+    }
+    .headline-1 p {
+        width: 100px !important ;
+    }
+    .billing .billing-info h3 {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .product-name h3 {
+        text-align: center;
+    }
+}
+@media (max-width: 733px) {
+    .banner-menu .image {
+        margin-top: 50px;
+    }
+    .banner-menu .headline-1 {
+        top: -10%;
+    }
+}
+@media (max-width: 591px) {
+    .banner-menu .headline-1 {
+        top: -10%;
+    }
+    .headline-1 h2 {
+        font-size: 40px !important;
+    }
+    .headline-1 h4 {
+        font-size: 10px !important;
+        letter-spacing: 5px !important;
+    }
+}
+@media (max-width: 545px) {
+    .billing {
+        padding: 100px 10px;
+    }
+    .banner-menu .headline-1 {
+        top: -15%;
+    }
+    .banner-menu .headline-1 p {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: unset;
+    }
+    .headline-1 h4 {
+        margin-top: -10px;
+    }
+    .headline-1 h2 {
+        margin-top: -10px;
+        font-size: 40px !important;
+    }
+}
+@media (max-width: 494px) {
+    .popup .popup-product h6 {
+        font-size: 13px;
+    }
+    .popup .popup-product .select {
+        font-size: 13px;
+    }
+    .popup .popup-product .money {
+        font-size: 13px;
+    }
+    .popup .popup-product .popup-item .price {
+        font-size: 13px;
+    }
+    .product-name .discount input {
+        width: 65%;
+    }
+    .product-name .discount .input-group button {
+        width: 35%;
+    }
+}
+@media (max-width: 460px) {
+    .popup .popup-product .image {
+        width: 30%;
+    }
+    .product-name .discount .input-group button {
+        font-size: 15px;
+        height: 55px;
+    }
+    .input-group .code {
+        height: 55px !important;
+    }
+}
+@media (max-width: 380px) {
+    .popup .popup-product h6 {
+        font-size: 10px;
+    }
+    .popup .popup-product .select {
+        font-size: 10px;
+    }
+    .popup .popup-product .money {
+        font-size: 10px;
+    }
+    .popup .popup-product .popup-item .price {
+        font-size: 10px;
+    }
+
+    .headline-1 h2 {
+        font-size: 30px !important;
+    }
+    .headline-1 h4 {
+        font-size: 8px !important;
+        letter-spacing: 4px !important;
+    }
+    .headline-1 p {
+        width: 80px !important ;
+    }
+    .product-name .discount .input-group button {
+        font-size: 10px;
+        height: 55px;
+        width: 25%;
+    }
+    .input-group .code {
+        width: 75% !important;
+    }
+    .code:focus ~ .dis,
+    input:valid ~ .dis {
+        transform: translateY(-100%) scale(0.8);
+        background-color: var(--bg);
+        padding: 0 5px;
+        color: var(--mainColor);
+    }
+    .input-group .dis {
+        font-size: 10px;
+        /* margin-top: 5px; */
+        top: 20%;
+    }
+    .product-name .billing-product h5 {
+        font-size: 17px;
+    }
+    .product-name .billing-product p {
+        font-size: 13px;
+    }
+    .product-name h3 {
+        font-size: 30px;
+    }
+    .billing .billing-info h3 {
+        font-size: 30px;
+    }
+    .c-radio label .text-radio {
+        font-size: 13px;
+    }
+    .btn2 {
+        width: 100%;
+        font-size: 13px;
+    }
+}
+@media (max-width: 374px) {
+    .popup .popup-product .image {
+        width: 30%;
+    }
+    .popup .popup-product h6 {
+        font-size: 8px;
+    }
+    .popup .popup-product .select {
+        font-size: 8px;
+    }
+    .popup .popup-product .money {
+        font-size: 8px;
+    }
+    .popup .popup-product .popup-item .price {
+        font-size: 10px;
+    }
+    .billing {
+        padding: 50px 5px;
+    }
+}
