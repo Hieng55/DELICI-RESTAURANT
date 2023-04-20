@@ -10,26 +10,25 @@ $(function () {
         $($tab).siblings().removeClass("active");
     });
 });
-
+const info = JSON.parse(localStorage.getItem("INFORBOOKNG"));
+console.log(info);
 let formData = JSON.parse(localStorage.getItem("formData"));
 console.log(formData);
-let fullName = formData.find((item) => item.name === "fullName");
-let phone = formData.find((item) => item.name === "phone");
-let email = formData.find((item) => item.name === "email");
-let town = formData.find((item) => item.name === "town");
-let address = formData.find((item) => item.name === "address");
-let cod = formData.find((item) => item.name === "payment");
+if (formData) {
+    let phone = formData.find((item) => item.name === "phone");
+    let email = formData.find((item) => item.name === "email");
+    submit.addEventListener("click", () => {
+        if (inputEmailCheck.value === email.value || inputEmailCheck.value === phone.value) {
+            groupInfo.classList.add("active");
+        } else {
+            groupInfo.classList.remove("active");
+        }
+    });
+}
 const inputEmailCheck = document.querySelector(".input");
 const groupInfo = document.querySelector(".info-account .group-info");
 const submit = document.querySelector(".input-container span");
-submit.addEventListener("click", () => {
-    if (inputEmailCheck.value == email.value || inputEmailCheck.value == phone.value) {
-        groupInfo.classList.add("active");
-    } else {
-        groupInfo.classList.remove("active");
-    }
-});
-const info = JSON.parse(localStorage.getItem("INFORBOOKNG"));
+
 console.log(info);
 const bookingInner = document.querySelector("#booking");
 
@@ -50,9 +49,17 @@ function showInforBooking(infoLocals) {
         </button>
     </div>
     </div>`;
-    console.log(infoLocals);
+    submit.addEventListener("click", () => {
+        if (inputEmailCheck.value === infoLocals[0].email) {
+            groupInfo.classList.add("active");
+        } else {
+            groupInfo.classList.remove("active");
+        }
+    });
 }
+
 showInforBooking(info);
+
 const remove = document.querySelector(".remove .btn2");
 remove.addEventListener("click", () => {
     localStorage.removeItem("INFORBOOKNG");

@@ -168,7 +168,10 @@
 }
 .group-about .btn2 {
     position: relative;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
     z-index: 2222;
 }
 .content-info {

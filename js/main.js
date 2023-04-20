@@ -14,7 +14,7 @@ $(window).scroll(function () {
     }
 });
 
-$(".nav-item").click(function () {
+$(".nav-toggle").click(function () {
     $(".toggle-menu").slideToggle(500);
     $(".icon-dow").toggleClass("active");
 });

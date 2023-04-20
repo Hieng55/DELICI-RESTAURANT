@@ -14,12 +14,13 @@ function renderInfoCart(listProduct) {
                 <td class="imageItem"><img src="${infoItem.image}" alt="Product"></td>
                 <td class="nameItem">${infoItem.nameItem}</td>
                 <td class="selectItem">${infoItem.select}</td>
-                <td class="price">$ <span>${infoItem.price}</span></td>
-                    <td class="quantity">
+                <td class="quantity">
                         <button onclick="minus(${index})" class="minus" type="button" name="button"><i class="fa-solid fa-minus"></i></button>
                         <input type="text" name="quantity" value="1" />
                         <button onclick="plus(${index})" class="plus" type="button" name="button"><i class="fa-solid fa-plus"></i></button>
-                    </td>
+                </td>
+                <td class="price">$ <span>${infoItem.price}</span></td>
+                    
                 <td onclick="removea(${index})" class="close"><i class="fa-solid fa-trash-can"></i></td>
             </tr>
     `;
@@ -72,10 +73,18 @@ function minus(id) {
     }
 }
 const checkoutButton = document.querySelector(".cart-total .btn2");
+const att = document.querySelector(".att");
+att.innerHTML = "";
 checkoutButton.addEventListener("click", () => {
-    localStorage.setItem("INFORDETAIL", JSON.stringify(infoDetail));
-    // console.log(infoDetail);
+    const inForDetail = localStorage.getItem("INFORDETAIL");
+    if (inForDetail || infoDetail.length > 0) {
+        localStorage.setItem("INFORDETAIL", JSON.stringify(infoDetail));
+        window.location.href = "billing.html";
+    } else {
+        att.innerHTML = "No products are purchased please return to the menu to choose.";
+    }
 });
+
 const sub = document.querySelector(".cart-total ul li .money b");
 const quantity = document.querySelector(".cart-total ul li .number b");
 const total = document.querySelector(".cart-total ul li .money-total b");
