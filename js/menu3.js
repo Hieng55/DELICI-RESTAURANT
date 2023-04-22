@@ -123,25 +123,19 @@ function renderWines(wineInner) {
 }
 renderWines(wine);
 const button4 = document.querySelector(".group-info .btn4");
-const error = document.querySelector(".error");
+const error = document.querySelector(".content-book .error");
+console.log(button4);
 button4.addEventListener("click", function () {
-    const bookPerson = document.querySelector(" .group1").value;
-    const bookDay = document.querySelector(".day").value;
-    const time = document.querySelector(" .time").value;
-    const mess = document.querySelector("#mess").value;
-    const input = document.querySelector("#name").value;
-    const input2 = document.querySelector("#email").value;
-    if (input == "") {
-        error.innerHTML = "Please enter your name";
-    } else if (input2 == "") {
-        error.innerHTML = "Please enter your email";
-    } else if (bookDay == "") {
-        error.innerHTML = "Please select a date to reserve your table";
+    const bookPerson = document.querySelector(" .group1");
+    const bookDay = document.querySelector(".day");
+    const time = document.querySelector(" .time");
+    const mess = document.querySelector("#mess");
+    const input = document.querySelector("#name");
+    const input2 = document.querySelector("#email");
+    if (bookPerson.value == "" || bookDay.value == "" || time.value == "" || mess.value == "" || input.value == "" || input2.value == "") {
+        error.innerHTML = "Please enter all the information";
     } else {
-        error.innerHTML = "";
+        error.classList.add("active");
+        error.innerHTML = "You have successfully booked a table";
     }
-    console.log(bookPerson);
-    console.log(bookDay);
-    console.log(time);
-    console.log(mess);
 });

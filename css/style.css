@@ -493,6 +493,10 @@ body {
     text-align: center;
     color: red !important;
 }
+.error.active {
+    text-align: center;
+    color: rgb(0, 255, 13) !important;
+}
 .carpet {
     width: 70%;
     margin: 70px auto;

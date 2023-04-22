@@ -179,8 +179,9 @@
 }
 .slide-about-content {
     position: absolute;
-    right: -10%;
+    right: 0%;
     top: -30%;
+    /* width: 20%; */
 }
 .slide-about-content-1 {
     position: absolute;

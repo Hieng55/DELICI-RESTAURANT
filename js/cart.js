@@ -6,7 +6,7 @@ if (infoProduct == null || infoProduct.length == 0) {
 } else {
     const checkout = document.querySelector(".group-product");
     let infoDetail = {};
-    checkout.innerHTML = "";
+
     function renderInfoCart(listProduct) {
         listProduct.forEach((infoItem, index) => {
             if (infoItem) {
@@ -20,7 +20,7 @@ if (infoProduct == null || infoProduct.length == 0) {
                         <input type="text" name="quantity" value="1" />
                         <button onclick="plus(${index})" class="plus" type="button" name="button"><i class="fa-solid fa-plus"></i></button>
                 </td>
-                <td class="price">$ <span>${infoItem.priceTotal}</span></td>
+                <td class="price">$ <span>${infoItem.price}</span></td>
                     
                 <td onclick="removea(${index})" class="close"><i class="fa-solid fa-trash-can"></i></td>
             </tr>
@@ -99,7 +99,7 @@ if (infoProduct == null || infoProduct.length == 0) {
     }
     function loadTotalPrice() {
         const totalAllPrice = infoProduct.reduce((acc, itemMoney) => {
-            return acc + parseInt(itemMoney.priceTotal);
+            return acc + parseInt(itemMoney.price);
         }, 0);
         total.innerHTML = totalAllPrice;
     }
