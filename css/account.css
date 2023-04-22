@@ -86,6 +86,10 @@
     font-family: "Forum", cursive;
     color: var(--mainColor);
 }
+.att {
+    color: red;
+    text-align: center;
+}
 .info-account .list-input li input:focus {
     border: 1px solid var(--mainColor);
 }

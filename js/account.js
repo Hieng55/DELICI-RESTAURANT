@@ -10,6 +10,8 @@ $(function () {
         $($tab).siblings().removeClass("active");
     });
 });
+const submit = document.querySelector(".input-container span");
+
 const info = JSON.parse(localStorage.getItem("INFORBOOKNG"));
 console.log(info);
 let formData = JSON.parse(localStorage.getItem("formData"));
@@ -27,12 +29,11 @@ if (formData) {
 }
 const inputEmailCheck = document.querySelector(".input");
 const groupInfo = document.querySelector(".info-account .group-info");
-const submit = document.querySelector(".input-container span");
 
 console.log(info);
 const bookingInner = document.querySelector("#booking");
 
-function showInforBooking(infoLocals) {
+function updateBookingInfo(infoLocals) {
     bookingInner.innerHTML = ` <div class="booking-table">
     <h3 class="text-center">Table Reservation Information</h3>
     <ul class="booking-content">
@@ -57,11 +58,23 @@ function showInforBooking(infoLocals) {
         }
     });
 }
-
+function showInforBooking(infoLocals) {
+    updateBookingInfo(infoLocals);
+}
 showInforBooking(info);
 
 const remove = document.querySelector(".remove .btn2");
 remove.addEventListener("click", () => {
     localStorage.removeItem("INFORBOOKNG");
-    showInforBooking();
+    bookingInner.innerHTML = `  <div class="booking-table">
+    <h3 class="text-center">Table Reservation Information</h3>
+    <ul class="booking-content">
+        <li class="bookName">Guest name: <span></span></li>
+        <li class="bookEmail">Email: <span></span></li>
+        <li class="bookPerson">Number of guests: <span></span></li>
+        <li class="bookDay">Date: <span></span></li>
+        <li class="bookTime">Time: <span></span></li>
+        <li class="bookStatus">Status: <span></span></li>
+    </ul>
+    </div>`;
 });

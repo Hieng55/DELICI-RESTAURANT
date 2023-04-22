@@ -144,6 +144,7 @@
     color: var(--white);
     font-family: "Forum", cursive;
     font-size: 50px;
+    position: relative;
 }
 .content .group-about .text-content {
     color: var(--white);

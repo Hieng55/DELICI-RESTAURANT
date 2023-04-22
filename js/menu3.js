@@ -133,6 +133,7 @@ button4.addEventListener("click", function () {
     const input = document.querySelector("#name");
     const input2 = document.querySelector("#email");
     if (bookPerson.value == "" || bookDay.value == "" || time.value == "" || mess.value == "" || input.value == "" || input2.value == "") {
+        error.classList.remove("active");
         error.innerHTML = "Please enter all the information";
     } else {
         error.classList.add("active");
