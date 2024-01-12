@@ -13,14 +13,14 @@ if (infoProduct == null || infoProduct.length == 0) {
                 checkout.innerHTML += ` 
             <tr class="cart-item">
                 <td class="imageItem"><img src="${infoItem.image}" alt="Product"></td>
-                <td class="nameItem">${infoItem.nameItem}</td>
+                <td class="nameItem">${infoItem.nameItem || infoItem.nameWine}</td>
                 <td class="selectItem">${infoItem.select}</td>
                 <td class="quantity">
                         <button onclick="minus(${index})" class="minus" type="button" name="button"><i class="fa-solid fa-minus"></i></button>
                         <input type="text" name="quantity" value="1" />
                         <button onclick="plus(${index})" class="plus" type="button" name="button"><i class="fa-solid fa-plus"></i></button>
                 </td>
-                <td class="price">$ <span>${infoItem.price}</span></td>
+                <td class="price"> $<span>${infoItem.priceInner.toFixed(2)}</span></td>
                     
                 <td onclick="removea(${index})" class="close"><i class="fa-solid fa-trash-can"></i></td>
             </tr>
@@ -32,11 +32,6 @@ if (infoProduct == null || infoProduct.length == 0) {
     renderInfoCart(infoProduct);
 
     let listCartItem = document.querySelectorAll(".cart-item");
-    // console.log(listCartItem);
-    const input = document.querySelector(".quantity input");
-    const price = document.querySelector(".cart-item .price span");
-    const nameItem = document.querySelector(".group-product .cart-item .nameItem");
-    // let value = parseInt(input.value);
     infoProduct.forEach((value, index) => {
         value.id = index;
     });
@@ -49,8 +44,8 @@ if (infoProduct == null || infoProduct.length == 0) {
         let price = listCartItem[id].querySelector(".price span");
         let quaPlus = quantity + 1;
         quantityInput.value = quaPlus;
-        price.innerHTML = (quaPlus * parseFloat(item.price)).toFixed(2);
-        item.priceTotal = (quaPlus * parseFloat(item.price)).toFixed(2);
+        price.innerHTML = (quaPlus * parseFloat(item.priceInner)).toFixed(2);
+        item.priceInnerTotal = (quaPlus * parseFloat(item.priceInner)).toFixed(2);
         item.quantity = quaPlus;
         update();
         console.log(infoProduct);
@@ -65,8 +60,8 @@ if (infoProduct == null || infoProduct.length == 0) {
             let quaMinus = quantity - 1;
             quantityInput.value = quaMinus;
             let price = listCartItem[id].querySelector(".price span");
-            price.innerHTML = (quaMinus * parseFloat(item.price)).toFixed(2);
-            item.priceTotal = (quaMinus * parseFloat(item.price)).toFixed(2);
+            price.innerHTML = (quaMinus * parseFloat(item.priceInner)).toFixed(2);
+            item.priceInnerTotal = (quaMinus * parseFloat(item.priceInner)).toFixed(2);
             item.quantity = quaMinus;
             update();
             localStorage.setItem("INFORCART", JSON.stringify(infoProduct));
@@ -85,21 +80,17 @@ if (infoProduct == null || infoProduct.length == 0) {
             console.log(inForDetail);
         }
     });
-
-    const sub = document.querySelector(".cart-total ul li .money b");
-    const quantity = document.querySelector(".cart-total ul li .number b");
     const total = document.querySelector(".cart-total ul li .money-total b");
-    const selectItem = document.querySelector(".group-product .cart-item .selectItem");
     function update() {
         const totalPrice = infoProduct.reduce((acc, item) => {
-            return acc + item.price * parseInt(listCartItem[item.id].querySelector("input").value);
+            return acc + item.priceInner * parseInt(listCartItem[item.id].querySelector("input").value);
         }, 0);
 
         total.innerHTML = totalPrice;
     }
     function loadTotalPrice() {
         const totalAllPrice = infoProduct.reduce((acc, itemMoney) => {
-            return acc + parseInt(itemMoney.price);
+            return acc + parseInt(itemMoney.priceInner);
         }, 0);
         total.innerHTML = totalAllPrice;
     }

@@ -67,6 +67,9 @@
 .popup .popup-product .popup-item {
     color: var(--white);
 }
+.details .product .image {
+    height: 410px;
+}
 .details .product .image img {
     width: 100%;
     height: 100%;

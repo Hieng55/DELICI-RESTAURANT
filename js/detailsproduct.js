@@ -1,21 +1,14 @@
-const product = {
-    name: "Cabernet Sauvignon",
-    priceNormal: "1000.00",
-    priceVip: "1500.00",
-    image: "img/menu-wine/full-2.jpg",
-    quantity: 1,
-    title: "The least fruit-like of all dark fruits. When writers mention cassis, they are often thinking of the seedy and gritty character of actual black currants. Homework assignment: try a black currant and report back.",
-};
 let arrayProduct;
 if (JSON.parse(localStorage.getItem("INFORCART"))) {
     arrayProduct = JSON.parse(localStorage.getItem("INFORCART"));
 } else {
     arrayProduct = [];
 }
-
+const product = JSON.parse(localStorage.getItem("PRODUCT"));
+console.log(product);
 const details = document.querySelector(".info-product");
-function renderDetailProduct(product) {
-    details.innerHTML = `<h3>${product.name}</h3>
+function renderDetailProduct() {
+    details.innerHTML = `<h3>${product.nameFood || product.nameWine}</h3>
         <ul class="start">
         <li><i class="fa-solid fa-star"></i></li>
         <li><i class="fa-solid fa-star"></i></li>
@@ -23,10 +16,16 @@ function renderDetailProduct(product) {
         <li><i class="fa-solid fa-star"></i></li>
         <li><i class="fa-solid fa-star"></i></li>
     </ul>
-            <p class="price-product">$<span>${product.priceNormal}</span></p>
+            <p class="price-product"><span>${product.price}</span></p>
             <p class="text">${product.title}</p>`;
 }
-renderDetailProduct(product);
+
+const imgHtml = document.querySelector(".product .list-image .image");
+const imgSlideFirst = document.querySelector("li.ava");
+imgHtml.innerHTML = ` <img src="${product.image}" alt="" />`;
+imgSlideFirst.innerHTML = ` <img src="${product.image}" alt="" />`;
+
+renderDetailProduct();
 $(function () {
     $(".dropdown-type").click(function () {
         $(".dropdown-select").slideToggle("500");
@@ -41,8 +40,8 @@ $(function () {
         $(this).siblings().removeClass("active");
     });
     $(".small-image ul li").click(function () {
-        $newsrc = $(this).find("img").attr("src");
-        $image = $(".product .list-image .image img").attr("src", $newsrc);
+        $newSrc = $(this).find("img").attr("src");
+        $image = $(".product .list-image .image img").attr("src", $newSrc);
     });
     $(".dropdown-select .normal").click(function () {
         $priceNormal = $(".price-product span").text(product.priceNormal);
@@ -73,10 +72,11 @@ $(function () {
                 $(".popup").removeClass("active");
             }, 2000);
             let infoProduct = {
-                nameItem: product.name,
+                nameItem: product.nameFood || product.nameWine,
                 image: product.image,
                 select: chooseSelect,
                 price: choosePrice,
+                priceInner: product.priceInner,
                 quantity: 1,
             };
             arrayProduct.push(infoProduct);
@@ -86,9 +86,4 @@ $(function () {
             $(".cart span").text(parseInt($CouCart) + 1);
         }
     });
-    // $(".info-product .start li").click(function () {
-    //     $(this).addClass("active");
-    //     $(this).prevAll().addClass("active");
-    //     $(this).nextAll().removeClass("active");
-    // });
 });

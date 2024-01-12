@@ -31,7 +31,7 @@ const billingSubtotal = document.querySelector(".billing-product .subtotal stron
 const totalBilling = document.querySelector(".total-billing strong b");
 function billingTotalProduct() {
     const billingTotal = infoCartDetail.reduce((acc, money) => {
-        return acc + parseInt(money.priceTotal ? money.priceTotal : money.price);
+        return acc + parseInt(money.priceTotal ? money.priceTotal : money.priceInner);
     }, 0);
     billingSubtotal.innerHTML = billingTotal.toFixed(2);
     totalBilling.innerHTML = billingTotal.toFixed(2);
@@ -44,7 +44,6 @@ buttonCode.addEventListener("click", () => {
     if (codeDiscount.includes(inputCode.value)) {
         const totalCode = billingSubtotal.innerHTML;
         const discountTotal = (totalCode * 10) / 100;
-
         totalBilling.innerHTML = (totalCode - discountTotal).toFixed(2);
     } else {
         attCode.innerHTML = "Discount code does not exist";
