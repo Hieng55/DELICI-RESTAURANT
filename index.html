@@ -1,637 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:image" content="https://hieng55.github.io/DELICI-RESTAURANT/img/logo/logo.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://hieng55.github.io/DELICI-RESTAURANT/img/logo/logo.png" />
     <meta property="og:title" content="DELICI" />
     <meta property="og:url" content="https://hieng55.github.io/DELICI-RESTAURANT/" />
-    <meta
-      property="og:description"
-      content="Welcome to DELICI"
+    <meta property="og:description" content="Welcome to DELICI" />
+    <title>DELICI</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-        <title>DELICI</title>
-        <!-- Font awesome -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <!-- Css bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <!-- Global css -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- local css -->
-        <link rel="stylesheet" href="css/home.css" />
-    </head>
-    <body>
-        <div class="scroll">
-            <i class="fa-solid fa-angle-up"></i>
+    <!-- Css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Global css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- local css -->
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="scroll">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <nav style="height: 100px" class="navbar navbar-expand-lg fixed-top p-3" id="1">
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand" href="#"><img src="img/logo/logo.png" alt="" /></a>
+        <div class="collapse navbar-collapse d-flex justify-content-between align-items-center">
+          <ul class="navbar-nav d-flex gap-3">
+            <li class="nav-item">
+              <a class="nav-link after" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+              <div class="list-food">
+                <a class="menu-food" href="menu.html">
+                  <img src="img/menu/menu-food-1.jpg" alt="" />
+                  <h3>Order Food</h3>
+                </a>
+                <a class="menu-food" href="menu2.html">
+                  <img src="img/menu/menu-food-2.jpg" alt="" />
+                  <h3>Party Menu</h3>
+                </a>
+                <a class="menu-food" href="menu3.html">
+                  <img src="img/menu-wine/wine-banner.jpg" alt="" />
+                  <h3>wine</h3>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">RESERVATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customeraccount.html">LOOKUP</a>
+            </li>
+          </ul>
         </div>
-        <nav class="navbar navbar-expand-lg fixed-top p-3" id="1">
-            <div class="container-fluid d-flex">
-                <a class="navbar-brand" href="#"><img src="img/logo/logo.png" alt="" /></a>
-                <div class="collapse navbar-collapse d-flex justify-content-between align-items-center">
-                    <ul class="navbar-nav d-flex gap-3">
-                        <li class="nav-item">
-                            <a class="nav-link after" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">MENU</a>
-                            <div class="list-food">
-                                <a class="menu-food" href="menu.html">
-                                    <img src="img/menu/menu-food-1.jpg" alt="" />
-                                    <h3>Order Food</h3>
-                                </a>
-                                <a class="menu-food" href="menu2.html">
-                                    <img src="img/menu/menu-food-2.jpg" alt="" />
-                                    <h3>Party Menu</h3>
-                                </a>
-                                <a class="menu-food" href="menu3.html">
-                                    <img src="img/menu-wine/wine-banner.jpg" alt="" />
-                                    <h3>wine</h3>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reservation.html">RESERVATION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="customeraccount.html">LOOKUP</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right d-flex gap-4 align-items-center">
-                    <div class="phone">
-                        <span><i class="fa-solid fa-phone"></i></span>+84 9877499388
-                    </div>
-                    <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i> <span>0</span></a>
-                    <div class="user">
-                        <span class="text-login"><a href="login-signup.html">Login</a>/ <a href="signup.html">Sign up</a></span>
-                        <span class="icon-login"><i class="fa-solid fa-circle-user"></i> <a href="customeraccount.html">Hello Hien</a></span>
-                    </div>
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu-mobile">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <div class="offcanvas offcanvas-end" id="menu-mobile">
-            <div class="offcanvas-header">
-                <h1 class="offcanvas-title"><img src="img/logo/logo.png" alt="" /></h1>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="user d-flex justify-content-center">
-                <span
-                    ><a href="login-signup.html"><i class="fa-solid fa-user"></i></a>
-                </span>
-            </div>
-            <p class="customer d-flex justify-content-center">Hello Hien</p>
-            <div class="offcanvas-body">
-                <ul class="offcanvas-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item nav-toggle">
-                        <a class="nav-link nav-dow d-flex justify-content-between" href="#"
-                            ><span class="name">MENU</span><span class="icon-dow"><i class="fa-solid fa-chevron-down"></i></span
-                        ></a>
-                        <div class="toggle-menu">
-                            <ul>
-                                <li class="nav-item"><a href="menu.html">Party Menu</a></li>
-                                <li class="nav-item"><a href="menu2.html">Order Food</a></li>
-                                <li class="nav-item pb-0"><a href="menu3.html">Wine</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="customeraccount.html">CUSTOMER ACCOUNT</a>
-                    </li>
-                    <li class="nav-item bottom">
-                        <a class="nav-link" href="contact.html">CONTACT</a>
-                    </li>
-                    <li class="nav-item bottom">
-                        <a class="nav-link" href="reservation.html">RESERVATION</a>
-                    </li>
-                    <li class="nav-item bottom">
-                        <a class="nav-link" href="customeraccount.html">LOOKUP</a>
-                    </li>
-                </ul>
-                <div class="text-canvas text-center">
-                    <h3>Visit Us</h3>
-                    <p>
-                        Restaurant St, Delicious City, London 9578, UK <br />
-                        Open: 9.30 am - 2.30pm <br />
-                        booking@domainame.com
-                    </p>
-                    <p class="none"></p>
-                    <p class="bold">Booking request :</p>
-                    <h4>+84 90848748388</h4>
-                </div>
-            </div>
+        <div class="right d-flex gap-4 align-items-center">
+          <div class="phone">
+            <span><i class="fa-solid fa-phone"></i></span>+84 9877499388
+          </div>
+          <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i> <span>0</span></a>
+          <div class="user">
+            <span class="text-login"><a href="login-signup.html">Login</a>/ <a href="signup.html">Sign up</a></span>
+            <span class="icon-login"><i class="fa-solid fa-circle-user"></i> <a href="customeraccount.html">Hello Hien</a></span>
+          </div>
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu-mobile">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
-        <div class="banner" id="2">
-            <!-- Carousel -->
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators d-flex gap-2">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                </div>
-
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="image"><img src="img/banner/banner-1.jpg" alt="Los Angeles" class="d-block" style="width: 100%" /></div>
-                        <div class="carousel-caption">
-                            <div class="headline-1">
-                                <h4>Amazing & delicious</h4>
-                                <p><img src="img/product/separator.png" alt="" /></p>
-                            </div>
-                            <h1>Flavors Inspired by <br />the Seasons</h1>
-                            <a class="btn1">VIEW OUR MENU</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="image"><img src="img/banner/banner-2.jpg" alt="Chicago" class="d-block" style="width: 100%" /></div>
-                        <div class="carousel-caption">
-                            <div class="headline-1">
-                                <h4>Amazing & delicious</h4>
-                                <p><img src="img/product/separator.png" alt="" /></p>
-                            </div>
-                            <h1>Flavors Inspired by <br />the Seasons</h1>
-                            <a class="btn1">VIEW OUR MENU</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="image"><img src="img/banner/banner-3.jpg" alt="New York" class="d-block" style="width: 100%" /></div>
-                        <div class="carousel-caption">
-                            <div class="headline-1">
-                                <h4>Amazing & delicious</h4>
-                                <p><img src="img/product/separator.png" alt="" /></p>
-                            </div>
-                            <h1>Flavors Inspired by <br />the Seasons</h1>
-                            <a class="btn1">VIEW OUR MENU</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev no-hover" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next no-hover" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" id="menu-mobile">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title"><img src="img/logo/logo.png" alt="" /></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="user d-flex justify-content-center">
+        <span
+          ><a href="login-signup.html"><i class="fa-solid fa-user"></i></a>
+        </span>
+      </div>
+      <p class="customer d-flex justify-content-center">Hello Hien</p>
+      <div class="offcanvas-body">
+        <ul class="offcanvas-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item nav-toggle">
+            <a class="nav-link nav-dow d-flex justify-content-between" href="#"
+              ><span class="name">MENU</span><span class="icon-dow"><i class="fa-solid fa-chevron-down"></i></span
+            ></a>
+            <div class="toggle-menu">
+              <ul>
+                <li class="nav-item"><a href="menu.html">Party Menu</a></li>
+                <li class="nav-item"><a href="menu2.html">Order Food</a></li>
+                <li class="nav-item pb-0"><a href="menu3.html">Wine</a></li>
+              </ul>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="customeraccount.html">CUSTOMER ACCOUNT</a>
+          </li>
+          <li class="nav-item bottom">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+          <li class="nav-item bottom">
+            <a class="nav-link" href="reservation.html">RESERVATION</a>
+          </li>
+          <li class="nav-item bottom">
+            <a class="nav-link" href="customeraccount.html">LOOKUP</a>
+          </li>
+        </ul>
+        <div class="text-canvas text-center">
+          <h3>Visit Us</h3>
+          <p>
+            Restaurant St, Delicious City, London 9578, UK <br />
+            Open: 9.30 am - 2.30pm <br />
+            booking@domainame.com
+          </p>
+          <p class="none"></p>
+          <p class="bold">Booking request :</p>
+          <h4>+84 90848748388</h4>
+        </div>
+      </div>
+    </div>
+    <div class="banner" id="2">
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators d-flex gap-2">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
 
-        <div class="offer">
-            <div class="slide-left">
-                <img src="img/slide/bg-1.png" alt="" />
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="image"><img src="img/banner/banner-1.jpg" alt="Los Angeles" class="d-block" style="width: 100%" /></div>
+            <div class="carousel-caption">
+              <div class="headline-1">
+                <h4>Amazing & delicious</h4>
+                <p><img src="img/product/separator.png" alt="" /></p>
+              </div>
+              <h1>Flavors Inspired by <br />the Seasons</h1>
+              <a class="btn1">VIEW OUR MENU</a>
             </div>
-            <div class="slide-right">
-                <img src="img/slide/bg-2.png" alt="" />
+          </div>
+          <div class="carousel-item">
+            <div class="image"><img src="img/banner/banner-2.jpg" alt="Chicago" class="d-block" style="width: 100%" /></div>
+            <div class="carousel-caption">
+              <div class="headline-1">
+                <h4>Amazing & delicious</h4>
+                <p><img src="img/product/separator.png" alt="" /></p>
+              </div>
+              <h1>Flavors Inspired by <br />the Seasons</h1>
+              <a class="btn1">VIEW OUR MENU</a>
             </div>
-            <div class="container">
-                <div class="headline-1 text-center">
-                    <h4>FLAVORS FOR ROYALTY</h4>
-                    <p class="after"><img src="img/product/separator.png" alt="" /></p>
-                </div>
-                <div class="content text-center">
-                    <h2>We Offer Top Notch</h2>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                        Voluptas enim eos reiciendis minima delectus illum est,
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-12 col-lg-4">
-                        <div class="item">
-                            <p class="images"><img src="img/menu/menu-party.jpg" alt="" /></p>
-                            <p class="after"><img src="img/slide/after.svg" alt="" /></p>
-                            <div class="view">
-                                <h5>Party Menu</h5>
-                                <div class="after-1"><a href="menu2.html">VIEW MENU</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4">
-                        <div class="item item-top">
-                            <div class="images"><img src="img/menu/oder-food.jpg" alt="" /></div>
-                            <p class="after"><img src="img/slide/after.svg" alt="" /></p>
-                            <div class="view">
-                                <h5>Order Food</h5>
-                                <div class="after-1"><a href="menu.html">VIEW MENU</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4">
-                        <div class="item item-none">
-                            <div class="images"><img src="img/menu-wine/vip-8.jpg" alt="" /></div>
-                            <p class="after"><img src="img/slide/after.svg" alt="" /></p>
-                            <div class="view">
-                                <h5>Wine</h5>
-                                <div class="after-1"><a href="menu2.html">VIEW MENU</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <div class="image"><img src="img/banner/banner-3.jpg" alt="New York" class="d-block" style="width: 100%" /></div>
+            <div class="carousel-caption">
+              <div class="headline-1">
+                <h4>Amazing & delicious</h4>
+                <p><img src="img/product/separator.png" alt="" /></p>
+              </div>
+              <h1>Flavors Inspired by <br />the Seasons</h1>
+              <a class="btn1">VIEW OUR MENU</a>
             </div>
+          </div>
         </div>
-        <div class="group">
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev no-hover" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next no-hover" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="offer">
+      <div class="slide-left">
+        <img src="img/slide/bg-1.png" alt="" />
+      </div>
+      <div class="slide-right">
+        <img src="img/slide/bg-2.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="headline-1 text-center">
+          <h4>FLAVORS FOR ROYALTY</h4>
+          <p class="after"><img src="img/product/separator.png" alt="" /></p>
+        </div>
+        <div class="content text-center">
+          <h2>We Offer Top Notch</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Voluptas enim eos reiciendis minima delectus illum est,
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="item">
+              <p class="images"><img src="img/menu/menu-party.jpg" alt="" /></p>
+              <p class="after"><img src="img/slide/after.svg" alt="" /></p>
+              <div class="view">
+                <h5>Party Menu</h5>
+                <div class="after-1"><a href="menu2.html">VIEW MENU</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="item item-top">
+              <div class="images"><img src="img/menu/oder-food.jpg" alt="" /></div>
+              <p class="after"><img src="img/slide/after.svg" alt="" /></p>
+              <div class="view">
+                <h5>Order Food</h5>
+                <div class="after-1"><a href="menu.html">VIEW MENU</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="item item-none">
+              <div class="images"><img src="img/menu-wine/vip-8.jpg" alt="" /></div>
+              <p class="after"><img src="img/slide/after.svg" alt="" /></p>
+              <div class="view">
+                <h5>Wine</h5>
+                <div class="after-1"><a href="menu2.html">VIEW MENU</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="group">
+      <div class="row">
+        <div class="headline-1 text-center">
+          <h4>FLAVORS FOR ROYALTY</h4>
+          <p class="after"><img src="img/product/separator.png" alt="" /></p>
+        </div>
+      </div>
+      <div class="content text-center">
+        <h2>Our Strength</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="item color small">
+              <div class="icon">
+                <img src="img/icon/icon-1.png" alt="" />
+              </div>
+              <div class="text">
+                <h5>Hygienic Food</h5>
+                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="item small">
+              <div class="icon">
+                <img src="img/icon/icon-2.png" alt="" />
+              </div>
+              <div class="text">
+                <h5>Hygienic Food</h5>
+                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="item color small">
+              <div class="icon">
+                <img src="img/icon/icon-3.png" alt="" />
+              </div>
+              <div class="text">
+                <h5>Hygienic Food</h5>
+                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="item small">
+              <div class="icon">
+                <img src="img/icon/icon-4.png" alt="" />
+              </div>
+              <div class="text">
+                <h5>Hygienic Food</h5>
+                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav tabs -->
+    <div class="list">
+      <div class="headline-1">
+        <h4>SPECIAL SELECTION</h4>
+        <p><img src="img/product/separator.png" alt="" /></p>
+        <div class="content text-center">
+          <h2>Delicious Menu</h2>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="box">
+          <ul class="nav nav-tabs justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#home">MORNING </a>
+            </li>
+            <li class="square"></li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#menu1">WEEKDAY LUNCH </a>
+            </li>
+            <li class="square"></li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#menu2">DINNER </a>
+            </li>
+            <li class="square"></li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#menu3">WINES</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane container active" id="home">
             <div class="row">
-                <div class="headline-1 text-center">
-                    <h4>FLAVORS FOR ROYALTY</h4>
-                    <p class="after"><img src="img/product/separator.png" alt="" /></p>
-                </div>
+              <div class="col-md-12 col-lg-6 before" id="item-1"></div>
+              <div class="col-md-12 col-lg-6 normal" id="item11"></div>
             </div>
-            <div class="content text-center">
-                <h2>Our Strength</h2>
+          </div>
+          <div class="tab-pane container fade" id="menu1">
+            <div class="row">
+              <div class="col-md-12 col-lg-6 before" id="item-2"></div>
+              <div class="col-md-12 col-lg-6 normal" id="item12"></div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="item color small">
-                            <div class="icon">
-                                <img src="img/icon/icon-1.png" alt="" />
-                            </div>
-                            <div class="text">
-                                <h5>Hygienic Food</h5>
-                                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="item small">
-                            <div class="icon">
-                                <img src="img/icon/icon-2.png" alt="" />
-                            </div>
-                            <div class="text">
-                                <h5>Hygienic Food</h5>
-                                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="item color small">
-                            <div class="icon">
-                                <img src="img/icon/icon-3.png" alt="" />
-                            </div>
-                            <div class="text">
-                                <h5>Hygienic Food</h5>
-                                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="item small">
-                            <div class="icon">
-                                <img src="img/icon/icon-4.png" alt="" />
-                            </div>
-                            <div class="text">
-                                <h5>Hygienic Food</h5>
-                                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="tab-pane container fade" id="menu2">
+            <div class="row">
+              <div class="col-md-12 col-lg-6 before" id="item-3"></div>
+              <div class="col-md-12 col-lg-6 normal" id="item13"></div>
             </div>
+          </div>
+          <div class="tab-pane container fade" id="menu3">
+            <div class="row">
+              <div class="col-md-12 col-lg-6 before" id="item-4"></div>
+              <div class="col-md-12 col-lg-6 normal" id="item14"></div>
+            </div>
+          </div>
         </div>
-        <!-- Nav tabs -->
-        <div class="list">
-            <div class="headline-1">
-                <h4>SPECIAL SELECTION</h4>
-                <p><img src="img/product/separator.png" alt="" /></p>
-                <div class="content text-center">
-                    <h2>Delicious Menu</h2>
+      </div>
+      <div class="slide-left">
+        <img src="img/slide/bg-1.png" alt="" />
+      </div>
+      <div class="slide-right">
+        <img src="img/slide/bg-2.png" alt="" />
+      </div>
+      <div class="text-time">
+        <p>During winter daily from <span> 7:00 pm</span> to <span> 9:00 pm</span></p>
+      </div>
+      <a href="" class="btn1">VIEW ALL MENU</a>
+    </div>
+    <div class="team">
+      <div class="slide">
+        <img src="img/slide/bg-21.png" alt="" />
+      </div>
+      <div class="food-slide">
+        <img src="img/slide/bg-9.png" alt="" />
+      </div>
+      <div class="headline-1">
+        <h4>EXPERIENCED TEAM</h4>
+        <p><img src="img/product/separator.png" alt="" /></p>
+        <div class="content r">
+          <h2>Meet Our Chef</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="box">
+              <div class="image">
+                <img src="img/product/team-1.jpg" alt="" />
+                <div class="title">
+                  <ul class="d-flex">
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="name">
+                <h2>Willium Joe</h2>
+                <h5>MASTER CHEF</h5>
+                <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="box">
+              <div class="image">
+                <img src="img/product/team-2.jpg" alt="" />
+                <div class="title">
+                  <ul class="d-flex">
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="name">
+                <h2>Steave Den</h2>
+                <h5>MASTER CHEF</h5>
+                <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box out">
+              <div class="image">
+                <img src="img/product/team-3.jpg" alt="" />
+                <div class="title">
+                  <ul class="d-flex">
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="name">
+                <h2>Lily Sopy</h2>
+                <h5>MASTER CHEF</h5>
+                <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="container-fluid">
-                <div class="box">
-                    <ul class="nav nav-tabs justify-content-center align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#home">MORNING </a>
-                        </li>
-                        <li class="square"></li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu1">WEEKDAY LUNCH </a>
-                        </li>
-                        <li class="square"></li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu2">DINNER </a>
-                        </li>
-                        <li class="square"></li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu3">WINES</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane container active" id="home">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-6 before" id="item-1"></div>
-                            <div class="col-md-12 col-lg-6 normal" id="item11"></div>
-                        </div>
-                    </div>
-                    <div class="tab-pane container fade" id="menu1">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-6 before" id="item-2"></div>
-                            <div class="col-md-12 col-lg-6 normal" id="item12"></div>
-                        </div>
-                    </div>
-                    <div class="tab-pane container fade" id="menu2">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-6 before" id="item-3"></div>
-                            <div class="col-md-12 col-lg-6 normal" id="item13"></div>
-                        </div>
-                    </div>
-                    <div class="tab-pane container fade" id="menu3">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-6 before" id="item-4"></div>
-                            <div class="col-md-12 col-lg-6 normal" id="item14"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-left">
-                <img src="img/slide/bg-1.png" alt="" />
-            </div>
-            <div class="slide-right">
-                <img src="img/slide/bg-2.png" alt="" />
-            </div>
-            <div class="text-time">
-                <p>During winter daily from <span> 7:00 pm</span> to <span> 9:00 pm</span></p>
-            </div>
-            <a href="" class="btn1">VIEW ALL MENU</a>
-        </div>
-        <div class="team">
-            <div class="slide">
-                <img src="img/slide/bg-21.png" alt="" />
-            </div>
-            <div class="food-slide">
-                <img src="img/slide/bg-9.png" alt="" />
-            </div>
-            <div class="headline-1">
-                <h4>EXPERIENCED TEAM</h4>
-                <p><img src="img/product/separator.png" alt="" /></p>
-                <div class="content r">
-                    <h2>Meet Our Chef</h2>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="box">
-                            <div class="image">
-                                <img src="img/product/team-1.jpg" alt="" />
-                                <div class="title">
-                                    <ul class="d-flex">
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <h2>Willium Joe</h2>
-                                <h5>MASTER CHEF</h5>
-                                <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="box">
-                            <div class="image">
-                                <img src="img/product/team-2.jpg" alt="" />
-                                <div class="title">
-                                    <ul class="d-flex">
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <h2>Steave Den</h2>
-                                <h5>MASTER CHEF</h5>
-                                <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="box out">
-                            <div class="image">
-                                <img src="img/product/team-3.jpg" alt="" />
-                                <div class="title">
-                                    <ul class="d-flex">
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="name">
-                                <h2>Lily Sopy</h2>
-                                <h5>MASTER CHEF</h5>
-                                <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="video">
-            <!-- <div class="image">
+    <div class="video">
+      <!-- <div class="image">
                 <img src="img/banner/background.jpg" alt="" />
             </div> -->
-            <div class="group-video">
-                <div class="headline-1">
-                    <h4>AMAZING EXPERIENCE</h4>
-                    <p><img src="img/product/separator.png" alt="" /></p>
-                    <div class="content">
-                        <h2>Watch Our Video</h2>
-                    </div>
-                </div>
-                <div class="icon">
-                    <div class="video-about">
-                        <div class="video-play">
-                            <!-- Button to trigger the modal -->
-                            <button type="button" id="openModal">
-                                <i class="fas fa-play" aria-hidden="true"></i>
-                            </button>
-                            <!-- The modal -->
-                            <div id="videoModal">
-                                <span class="close">&times;</span>
-                                <div class="modal-content">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/22_wR2X5QeU"
-                                        title="YouTube video player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen
-                                    ></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="turn d-flex justify-content-center">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="text">
-                    <h3>A modern restaurant with a menu that will make your mouth water.</h3>
-                    <p>WILLIUM JOE - MASTER CHEF</p>
-                </div>
-                <div class="carpet">
-                    <img src="https://delici.windstripedesign.ro/images/background/pattern-10.svg" alt="" />
-                </div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-6 col-md-6 col-lg-2">
-                            <div class="box-number d-flex align-items-center">
-                                <div class="numscroller" data-delay="10" data-increment="7" data-min="0" data-max="150">0</div>
-                                <div class="plus"><i class="fa-solid fa-plus"></i></div>
-                                <div class="describe">DAILY ORDER</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-2">
-                            <div class="box-number d-flex align-items-center">
-                                <div class="numscroller" data-delay="10" data-increment="7" data-min="0" data-max="82">0</div>
-                                <div class="plus"><i class="fa-solid fa-plus"></i></div>
-                                <div class="describe">SPECIAL DISHES</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-2">
-                            <div class="box-number d-flex align-items-center">
-                                <div class="numscroller" data-delay="2" data-increment="3" data-min="0" data-max="50">0</div>
-                                <div class="plus"><i class="fa-solid fa-plus"></i></div>
-                                <div class="describe">EXPERT CHEF</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-2">
-                            <div class="box-number d-flex align-items-center">
-                                <div class="numscroller" data-delay="2" data-increment="3" data-min="0" data-max="20">0</div>
-                                <div class="plus"><i class="fa-solid fa-plus"></i></div>
-                                <div class="describe">AWARDS WON</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="group-video">
+        <div class="headline-1">
+          <h4>AMAZING EXPERIENCE</h4>
+          <p><img src="img/product/separator.png" alt="" /></p>
+          <div class="content">
+            <h2>Watch Our Video</h2>
+          </div>
         </div>
-        <div class="footer">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <div class="list-footer">
-                            <ul class="start">
-                                <li><a id="1" href="">HOME</a></li>
-                                <li><a id="2" href="">MENUS</a></li>
-                                <li><a id="3" href="">ABOUT US</a></li>
-                                <li><a id="4" href="">OUR CHEFS</a></li>
-                                <li><a id="5" href="">CONTACT</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="info">
-                            <div class="line-1"></div>
-                            <div class="line-2"></div>
-                            <div class="logo">
-                                <img src="img/logo/logo.png" alt="" />
-                            </div>
-                            <div class="address">
-                                <p>
-                                    Restaurant St, Delicious City, London 9578, UK <br />
-                                    <span>booking@domainname.com</span> <br />
-                                    <span>Booking Request : +88-123-123456</span> <br />
-                                    Open : 09:00 am - 01:00 pm
-                                </p>
-                            </div>
-                            <ul class="turn d-flex justify-content-center">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <h3>Get News & Offers</h3>
-                            <p class="sub">Subscribe us & Get <span>25% Off.</span></p>
-                            <div class="email">
-                                <div class="input">
-                                    <input type="text" placeholder="Email" />
-                                </div>
-                                <div class="icon"><i class="fa-regular fa-envelope"></i></div>
-                                <button class="btn2">SUBSCRIBE</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="list-footer">
-                            <ul class="start">
-                                <li><a href="">FACEBOOK</a></li>
-                                <li><a href="">TWITTER</a></li>
-                                <li><a href="">INSTAGRAM</a></li>
-                                <li><a href="">YOUTUBE</a></li>
-                                <li><a href="">GOOGLE MAP</a></li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="icon">
+          <div class="video-about">
+            <div class="video-play">
+              <!-- Button to trigger the modal -->
+              <button type="button" id="openModal">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+              <!-- The modal -->
+              <div id="videoModal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <iframe
+                    src="https://www.youtube.com/embed/22_wR2X5QeU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
+              </div>
             </div>
-            <p class="coppyright">
-                © 2023 Restaurt. All Rights Reserved | Code by <span> <a href=""> Hien Developer</a></span>
-            </p>
+          </div>
         </div>
+        <ul class="turn d-flex justify-content-center">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="text">
+          <h3>A modern restaurant with a menu that will make your mouth water.</h3>
+          <p>WILLIUM JOE - MASTER CHEF</p>
+        </div>
+        <div class="carpet">
+          <img src="https://delici.windstripedesign.ro/images/background/pattern-10.svg" alt="" />
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="box-number d-flex align-items-center">
+                <div class="numscroller" data-delay="10" data-increment="7" data-min="0" data-max="150">0</div>
+                <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                <div class="describe">DAILY ORDER</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="box-number d-flex align-items-center">
+                <div class="numscroller" data-delay="10" data-increment="7" data-min="0" data-max="82">0</div>
+                <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                <div class="describe">SPECIAL DISHES</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="box-number d-flex align-items-center">
+                <div class="numscroller" data-delay="2" data-increment="3" data-min="0" data-max="50">0</div>
+                <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                <div class="describe">EXPERT CHEF</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="box-number d-flex align-items-center">
+                <div class="numscroller" data-delay="2" data-increment="3" data-min="0" data-max="20">0</div>
+                <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                <div class="describe">AWARDS WON</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="list-footer">
+              <ul class="start">
+                <li><a id="1" href="">HOME</a></li>
+                <li><a id="2" href="">MENUS</a></li>
+                <li><a id="3" href="">ABOUT US</a></li>
+                <li><a id="4" href="">OUR CHEFS</a></li>
+                <li><a id="5" href="">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="info">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="logo">
+                <img src="img/logo/logo.png" alt="" />
+              </div>
+              <div class="address">
+                <p>
+                  Restaurant St, Delicious City, London 9578, UK <br />
+                  <span>booking@domainname.com</span> <br />
+                  <span>Booking Request : +88-123-123456</span> <br />
+                  Open : 09:00 am - 01:00 pm
+                </p>
+              </div>
+              <ul class="turn d-flex justify-content-center">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <h3>Get News & Offers</h3>
+              <p class="sub">Subscribe us & Get <span>25% Off.</span></p>
+              <div class="email">
+                <div class="input">
+                  <input type="text" placeholder="Email" />
+                </div>
+                <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                <button class="btn2">SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="list-footer">
+              <ul class="start">
+                <li><a href="">FACEBOOK</a></li>
+                <li><a href="">TWITTER</a></li>
+                <li><a href="">INSTAGRAM</a></li>
+                <li><a href="">YOUTUBE</a></li>
+                <li><a href="">GOOGLE MAP</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="coppyright">
+        © 2023 Restaurt. All Rights Reserved | Code by <span> <a href=""> Hien Developer</a></span>
+      </p>
+    </div>
 
-        <!-- jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <!-- js bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- javascript -->
-        <script src="jQuery-Plugin-For-Counting-Up-Numbers-While-Scrolling-numscroller/numscroller-1.0.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script src="js/home.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- javascript -->
+    <script src="jQuery-Plugin-For-Counting-Up-Numbers-While-Scrolling-numscroller/numscroller-1.0.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/home.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
